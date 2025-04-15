@@ -7,13 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FF6B35",
-        secondary: "#FFB800",
-        accent: "#FF3F00",
+        primary: '#C1502E',    // Color terracota de La Vasera
+        secondary: '#FDF6E9',  // Color crema del fondo
+        accent: '#8B4513',     // Color café para acentos
+        brown: {
+          light: '#D4A484',    // Café claro
+          DEFAULT: '#8B4513',  // Café medio
+          dark: '#4A3728'      // Café oscuro
+        }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        display: ['Georgia', 'serif'],
+        sans: ['Arial', 'sans-serif']
       },
+      backgroundImage: {
+        'texture': "url('/texture.png')"
+      }
     },
   },
   plugins: [],
