@@ -45,55 +45,57 @@ function App() {
       <main className="max-w-7xl mx-auto py-6 md:py-12 px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
         <div id="productos" className="bg-white shadow-xl rounded-lg p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Lista de Productos</h2>
-          <div className="overflow-x-auto -mx-4 sm:mx-0">
-            <table className="min-w-full divide-y divide-gray-200 text-sm md:text-base">
-              <thead>
-                <tr>
-                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Producto</th>
-                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Precio</th>
-                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Costo</th>
-                  <th className="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ganancia</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Doritos</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$25.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$18.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">$7.00</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Sabritas</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$20.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$15.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">$5.00</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nachos con queso</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$50.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$15.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">$35.00</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Esquites preparados</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$40.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$10.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">$30.00</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Postre en vaso</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$45.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$12.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">$33.00</td>
-                </tr>
-                <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Combo nachos + soda</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$70.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$25.00</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-green-600">$45.00</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="overflow-x-auto -mx-4 sm:mx-0 shadow-md rounded-lg">
+            <div className="inline-block min-w-full align-middle">
+              <table className="min-w-full divide-y divide-gray-200 text-sm md:text-base">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Producto</th>
+                    <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Precio</th>
+                    <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Costo</th>
+                    <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Ganancia</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Doritos</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$25.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$18.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-green-600 font-medium">$7.00</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Sabritas</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$20.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$15.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-green-600 font-medium">$5.00</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Nachos con queso</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$50.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$15.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-green-600 font-medium">$35.00</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Esquites preparados</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$40.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$10.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-green-600 font-medium">$30.00</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Postre en vaso</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$45.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$12.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-green-600 font-medium">$33.00</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Combo nachos + soda</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$70.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-gray-900">$25.00</td>
+                    <td className="px-3 sm:px-6 py-3 whitespace-nowrap text-sm text-right text-green-600 font-medium">$45.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
