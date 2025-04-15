@@ -25,31 +25,31 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-secondary">
-      <nav className="bg-primary shadow-lg">
+    <div className="min-h-screen bg-gray-100">
+      <nav className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:justify-between py-4 md:h-16">
             <div className="flex justify-center md:justify-start items-center">
-              <h1 className="text-3xl font-display font-bold text-secondary italic">La Vasera</h1>
+              <h1 className="text-2xl font-bold text-primary">SnackVenture</h1>
             </div>
-            <div className="flex flex-wrap justify-center md:justify-end items-center space-x-2 md:space-x-6 mt-4 md:mt-0">
-              <a href="#productos" className="text-secondary hover:text-white px-3 py-2 text-lg font-medium transition-colors duration-200">Productos</a>
-              <a href="#menu" className="text-secondary hover:text-white px-3 py-2 text-lg font-medium transition-colors duration-200">Menú</a>
-              <a href="#calculos" className="text-secondary hover:text-white px-3 py-2 text-lg font-medium transition-colors duration-200">Cálculos</a>
-              <a href="#estudio" className="text-secondary hover:text-white px-3 py-2 text-lg font-medium transition-colors duration-200">Estudio de Mercado</a>
+            <div className="flex flex-wrap justify-center md:justify-end items-center space-x-2 md:space-x-4 mt-4 md:mt-0">
+              <a href="#productos" className="text-gray-700 hover:text-primary px-2 py-1">Productos</a>
+              <a href="#menu" className="text-gray-700 hover:text-primary px-2 py-1">Menú</a>
+              <a href="#calculos" className="text-gray-700 hover:text-primary px-2 py-1">Cálculos</a>
+              <a href="#estudio" className="text-gray-700 hover:text-primary px-2 py-1">Estudio de Mercado</a>
             </div>
           </div>
         </div>
       </nav>
 
       <main className="max-w-7xl mx-auto py-6 md:py-12 px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
-        <div id="productos" className="bg-white shadow-xl rounded-lg p-8 border-t-4 border-primary">
-          <h2 className="text-3xl font-display font-bold text-brown-dark mb-6">Sabores que caben en un vaso</h2>
+        <div id="productos" className="bg-white shadow-xl rounded-lg p-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Lista de Productos</h2>
           <div className="overflow-x-auto -mx-4 sm:mx-0 shadow-md rounded-lg">
             <div className="inline-block min-w-full align-middle">
               <table className="min-w-full divide-y divide-gray-200 text-sm md:text-base">
                 <thead>
-                  <tr className="bg-primary/10">
+                  <tr className="bg-gray-50">
                     <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Producto</th>
                     <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Precio</th>
                     <th scope="col" className="sticky top-0 z-10 px-3 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Costo</th>
